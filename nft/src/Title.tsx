@@ -45,7 +45,7 @@ const Title = (props: TitleProps) => {
         <a
           target="_blank"
           className={"bg-yellow-400 px-4 py-2 rounded-xl hover:bg-yellow-500"}
-          href="http://localhost:3000"
+          href="https://gsbc-deploy-b0s5ha5ai-shak360.vercel.app/"
         >
           Connect your wallet
         </a>
