@@ -1,9 +1,9 @@
 import Document, {
-  Html,
+  DocumentContext,
   Head,
+  Html,
   Main,
   NextScript,
-  DocumentContext,
 } from 'next/document';
 
 export default class MetaplexDocument extends Document {

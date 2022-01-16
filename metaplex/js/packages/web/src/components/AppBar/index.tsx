@@ -1,18 +1,18 @@
+import { MenuOutlined } from '@ant-design/icons';
+import { ConnectButton } from '@oyster/common';
+import { useWallet } from '@solana/wallet-adapter-react';
+import { Button, Menu, Modal } from 'antd';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Menu, Modal } from 'antd';
-import { useWallet } from '@solana/wallet-adapter-react';
-import { Notifications } from '../Notifications';
 import useWindowDimensions from '../../utils/layout';
-import { MenuOutlined } from '@ant-design/icons';
-import { HowToBuyModal } from '../HowToBuyModal';
 import {
   Cog,
   CurrentUserBadge,
   CurrentUserBadgeMobile,
 } from '../CurrentUserBadge';
-import { ConnectButton } from '@oyster/common';
+import { HowToBuyModal } from '../HowToBuyModal';
 import { MobileNavbar } from '../MobileNavbar';
+import { Notifications } from '../Notifications';
 
 const getDefaultLinkActions = (connected: boolean) => {
   return [
@@ -68,6 +68,7 @@ export const MetaplexMenu = () => {
                 <Menu.Item key={idx}>{item}</Menu.Item>
               ))}
             </Menu>
+            <div className="bg-red-500"> HELP ME</div>
             <div className="actions">
               {!connected ? (
                 <div className="actions-buttons">

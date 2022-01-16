@@ -14,9 +14,9 @@ import {
   StaticPageView,
 } from './views';
 import { AdminView } from './views/admin';
+import { BillingView } from './views/auction/billing';
 import PackView from './views/pack';
 import { PackCreateView } from './views/packCreate';
-import { BillingView } from './views/auction/billing';
 
 export function Routes() {
   const shouldEnableNftPacks = process.env.NEXT_ENABLE_NFT_PACKS === 'true';
