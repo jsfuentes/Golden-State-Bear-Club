@@ -19,7 +19,7 @@ const Title = (props: TitleProps) => {
   return (
     <animated.div
       className={
-        " w-2/6 h-1/2 text-center mx-auto bg-white opacity-70 rounded-xl font-source flex flex-col items-center justify-center"
+        " w-2/6 h-1/2 text-center mx-auto  opacity-70 rounded-xl font-source flex flex-col items-center justify-center"
       }
       style={styles}
     >
