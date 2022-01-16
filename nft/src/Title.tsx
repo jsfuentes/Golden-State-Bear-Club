@@ -1,6 +1,6 @@
 import { IParallax } from "@react-spring/parallax";
 import React from "react";
-import { useSpring, animated } from "react-spring";
+import { animated, useSpring } from "react-spring";
 
 interface TitleProps {
   parallaxRef: React.MutableRefObject<IParallax>;
@@ -46,6 +46,7 @@ const Title = (props: TitleProps) => {
           target="_blank"
           className={"bg-yellow-400 px-4 py-2 rounded-xl hover:bg-yellow-500"}
           href="https://gsbc-deploy-b0s5ha5ai-shak360.vercel.app/"
+          rel="noreferrer"
         >
           Connect your wallet
         </a>

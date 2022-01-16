@@ -13,6 +13,7 @@ const PersonCard = (props: PersonCardProps) => {
       <img
         src={props.url}
         className={"w-36 h-36 flex-shrink object-cover rounded-full"}
+        alt="Person"
       />
       <div>{props.name}</div>
     </div>
