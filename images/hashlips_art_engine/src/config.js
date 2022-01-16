@@ -24,7 +24,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 50,
+    growEditionSizeTo: 35,
     layersOrder: [
       { name: "Background" },
       { name: "Paint" },
@@ -47,7 +47,7 @@ const format = {
 };
 
 const gif = {
-  export: false,
+  export: true,
   repeat: 0,
   quality: 100,
   delay: 500,

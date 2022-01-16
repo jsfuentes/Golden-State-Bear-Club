@@ -1,15 +1,17 @@
 import { render } from "react-dom";
 import React, { useState } from "react";
 import { useSprings, animated, interpolate } from "react-spring";
-import { useGesture } from "@use-gesture/react";
+import { useGesture } from "react-use-gesture";
 
 const cards = [
-  "https://upload.wikimedia.org/wikipedia/en/f/f5/RWS_Tarot_08_Strength.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/5/53/RWS_Tarot_16_Tower.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/9/9b/RWS_Tarot_07_Chariot.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/d/db/RWS_Tarot_06_Lovers.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/d/de/RWS_Tarot_01_Magician.jpg",
+  "/1.png",
+  "/2.png",
+  "/3.png",
+  "/4.png",
+  "/5.png",
+  "/6.png",
+  "/7.png",
+  "/8.png",
 ];
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
@@ -66,7 +68,7 @@ export default function Deck() {
   );
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
-    <div>
+    <div className={"relative w-32 h-32"}>
       {props.map(({ x, y, rot, scale }, i) => (
         <animated.div
           key={i}
@@ -76,6 +78,7 @@ export default function Deck() {
               (x, y) => `translate3d(${x}px,${y}px,0)`
             ),
           }}
+          className={"absolute w-32 h-32 flex items-center justify-center"}
         >
           {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
           <animated.div
@@ -83,8 +86,9 @@ export default function Deck() {
             style={{
               transform: interpolate([rot, scale], trans),
               backgroundImage: `url(${cards[i]})`,
+              backgroundSize: "cover",
             }}
-            className={"w-10 h-10 bg-black"}
+            className={"w-32 h-32 bg-green-100"}
           />
         </animated.div>
       ))}
