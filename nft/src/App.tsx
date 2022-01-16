@@ -179,7 +179,7 @@ function App() {
         >
           <div
             className={
-              "w-4/6 h-1/2 mx-auto bg-white shadow-xl rounded-xl flex flex-col px-12 py-14"
+              "w-4/6 mx-auto bg-white shadow-xl rounded-xl flex flex-col px-12 py-14"
             }
           >
             <div
