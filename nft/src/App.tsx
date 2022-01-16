@@ -7,6 +7,7 @@ import im5 from "img/33.png";
 import im6 from "img/34.png";
 import im7 from "img/35.png";
 import metaimage from "img/metaimage.jpeg";
+import Lottie from "lottie-react";
 // import meteor from "img/meteor";
 // import Clouds from "../public/clouds.svg";
 import animationData from "nft.json";
@@ -14,7 +15,6 @@ import PersonCard from "PersonCard";
 import React, { useRef } from "react";
 // import { useSpring, animated } from "react-spring";
 import { Helmet } from "react-helmet";
-import Lottie from "react-lottie";
 import Sky from "react-sky";
 import Title from "Title";
 // import logo from "./logo.svg";
@@ -218,12 +218,11 @@ function App() {
                   the future of adoption!
                 </div>
               </div>
+              {/* @ts-ignore */}
               <Lottie
-                options={{
-                  loop: true,
-                  autoplay: true,
-                  animationData: animationData,
-                }}
+                animationData={animationData}
+                loop
+                autoplay
                 height={300}
                 width={400}
               />
