@@ -187,14 +187,18 @@ function App() {
             </div>
             <div className={"flex"}>
               <div className={"flex flex-col justify-center items-center"}>
-                <div className={"text-4xl font-source mt-4"}>
+                <div
+                  className={
+                    "text-3xl font-source mt-4 tracking-wide font-source"
+                  }
+                >
                   1. Volunteer for your community to earn a{" "}
                   <span className={"underline decoration-amber-400"}>
                     unique
                   </span>{" "}
                   Pooh Bear community NFT token
                 </div>
-                <div className={"text-4xl font-source mt-4"}>
+                <div className={"text-3xl tracking-wide font-source mt-4"}>
                   2. Redeem your NFT for local discounts in the community
                 </div>
               </div>

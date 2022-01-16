@@ -19,7 +19,7 @@ const Title = (props: TitleProps) => {
   return (
     <animated.div
       className={
-        " w-2/6 h-1/2 text-center mx-auto  opacity-70 rounded-xl font-source flex flex-col items-center justify-center"
+        " w-2/6 h-1/2 text-center mx-auto bg-white opacity-70 rounded-xl font-source flex flex-col items-center justify-center"
       }
       style={styles}
     >
@@ -42,9 +42,13 @@ const Title = (props: TitleProps) => {
         others{" "}
       </div>
       <div className={"flex items-center mt-4 gap-3"}>
-        <div className="bg-yellow-400 px-4 py-2 rounded-xl hover:bg-yellow-500">
+        <a
+          target="_blank"
+          className={"bg-yellow-400 px-4 py-2 rounded-xl hover:bg-yellow-500"}
+          href="http://localhost:3000"
+        >
           Connect your wallet
-        </div>
+        </a>
         <div
           className={"hover:text-black text-gray-600"}
           onClick={() => props.parallaxRef.current.scrollTo(1)}
